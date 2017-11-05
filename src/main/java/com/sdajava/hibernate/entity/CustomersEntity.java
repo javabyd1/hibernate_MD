@@ -16,4 +16,13 @@ public class CustomersEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id", nullable = false)
     private int customer_id;
+
+    @Column(name = "imie")
+    private String name;
+
+    @Column(name = "nazwisko")
+    private String lastname;
+
+    @Column(name = "miasto")
+    private String city;
 }
